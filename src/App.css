@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+  padding: 10rem;
 }
 
-.App-link {
-  color: #61dafb;
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  span {
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-size: 3.5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.arrowRight {
+  transform: rotate(-90deg);
+}
+
+.arrowLeft {
+  transform: rotate(90deg);
+}
+
+.imagemSlider {
+  height: 700px;
+  border: solid 10px rgb(40, 27, 112);
+}
+
+.dots {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background-color: rgb(250, 7, 7);
 }
