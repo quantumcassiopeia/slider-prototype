@@ -27,6 +27,8 @@
     cursor: pointer;
 
     font-size: 3.5rem;
+
+    user-select: none;
   }
 }
 
@@ -39,7 +41,7 @@
 }
 
 .imagemSlider {
-  height: 700px;
+  height: 900px;
   border: solid 10px rgb(40, 27, 112);
 }
 
@@ -53,8 +55,8 @@
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   margin: 5px;
   background-color: gray;
   border-radius: 50%;
